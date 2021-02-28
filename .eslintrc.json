@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "no-console": "off",
+    "semi": ["warn", "never"],
+    "indent": ["warn", 2],
+    "comma-dangle": ["error", "always-multiline"],
+    "no-empty": ["error", { "allowEmptyCatch": true }],
+    "no-param-reassign": ["error", {"props": false }],
+    "no-unused-vars": ["warn", {
+      "vars": "all",
+      "args": "after-used",
+      "ignoreRestSiblings": true
+    }],
+    "class-methods-use-this": ["off"]
+  }
+}
